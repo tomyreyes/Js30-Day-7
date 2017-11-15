@@ -35,13 +35,13 @@ this method will return the first element it finds that meets the conditions pro
 Example:
 
 ```
-const array = [12, 6, 5, 4, 7];
+const array = [6, 5, 12, 4, 7];
 
-function myFavNumber (element){
-  return element === 6; 
+function overTen (element){
+  return element >=10; 
 }
 
-array.find(myFavNumber); 
+array.find(overTen); //12 
 ```
 
 .findIndex() 
@@ -54,5 +54,5 @@ const randoNums = [11, 5, 25, 79, 1001, 112, 6, 9, 67];
 function findFavNum(element) {
   return element ===6;
 }
-randoNums.findIndex(findFavNum); 
+randoNums.findIndex(findFavNum); //6
 ```
